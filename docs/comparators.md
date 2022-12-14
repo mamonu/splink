@@ -1,5 +1,5 @@
 
-Comparators
+# Comparators
 
 
 String comparators are algorithms used in data linkage to compare and evaluate the similarity between two strings of text. These algorithms can be applied to different types of data, including names, addresses, and other identifying information, to determine if two records refer to the same individual or entity.
@@ -9,7 +9,7 @@ One common use of string comparators in data linkage is to identify duplicates w
 Another use of string comparators in data linkage is to merge different datasets or databases. By comparing strings across multiple sources, the algorithm can identify records that refer to the same individual or entity and merge them into a single record. This can be useful for creating a more comprehensive and accurate view of the data, and for identifying trends and patterns that may not be visible in a single dataset.
 
 
-Jaro similarity
+## Jaro similarity
 
 
 The Jaro measure is defined as the minimum of three values: the number of matching characters divided by the average length of the two strings, the number of transpositions divided by the average length of the two strings, and the number of matching characters divided by the maximum length of the two strings.
@@ -34,7 +34,7 @@ and $t$ is the number of transpositions.
 
 
 
-
+## Jaro Winkler similarity
 
 
 The formula for Jaro Winkler is:
@@ -62,3 +62,17 @@ $$Levenstein(s_1, s_2) = \min \lbrace \begin{array}{l}
 \end{array} \rbrace $$
 
 where $s_1$ and $s_2$ are the two strings being compared. This metric measures the minimum number of edit operations (insertions, deletions, and substitutions) required to transform one string into the other, and can be used to compare strings that may not be identical but are still similar.
+
+
+
+## Phonetic transformation algorithms
+
+Phonetic transformations are algorithms used to encode words into a standardized form based on their phonetic sound. This can be useful in tasks such as spelling correction or name matching. Two common phonetic transformations are Soundex and Double Metaphone.
+
+Soundex is a phonetic algorithm developed by the U.S. Census Bureau in the early 1900s. It encodes words by converting them into a four-digit code, where each digit represents a specific phonetic sound. For example, the Soundex code for "MARTHA" would be M630, and the code for "MARHTA" would be M630 as well. This is because both words have the same phonetic sound, despite the different spelling.
+
+Double Metaphone is a more recent phonetic algorithm developed by Lawrence Philips in 1998. It encodes words into a primary and secondary code, allowing for more variations in phonetic sounds. For example, the primary code for "MARTHA" would be MR0 and the secondary code would be MRT, while the primary code for "MARHTA" would be MRT and the secondary code would be MR0. This is because both words have similar sounds, but Double Metaphone recognizes the slight difference in the vowel sounds.
+
+In conclusion, Soundex and Double Metaphone are useful phonetic transformations for tasks such as spelling correction and name matching. By encoding words into standardized codes based on their phonetic sound, these algorithms can help improve accuracy and efficiency in these tasks.
+
+
