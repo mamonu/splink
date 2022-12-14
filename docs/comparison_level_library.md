@@ -12,7 +12,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
 
@@ -22,7 +22,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
       
@@ -33,7 +33,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
 
@@ -43,7 +43,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
       
@@ -53,7 +53,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false   
       heading_level: 1
 
@@ -63,17 +63,17 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
  
- ::: splink.comparison_level_library.JaccardLevelBase
+::: splink.comparison_level_library.JaccardLevelBase
     handler: python
     selection:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
 
@@ -83,7 +83,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
       
@@ -93,7 +93,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1    
       
@@ -103,7 +103,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1   
       
@@ -113,7 +113,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1   
       
