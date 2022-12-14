@@ -16,6 +16,8 @@ tags:
       show_source: false
       heading_level: 1
 
+---
+
 ::: splink.comparison_level_library.ExactMatchLevelBase
     handler: python
     selection:
@@ -26,6 +28,7 @@ tags:
       show_source: false
       heading_level: 1
       
+---
 
 ::: splink.comparison_level_library.ElseLevelBase
     handler: python
@@ -37,6 +40,9 @@ tags:
       show_source: false
       heading_level: 1
 
+---
+
+
 ::: splink.comparison_level_library.DistanceFunctionLevelBase
     handler: python
     selection:
@@ -47,6 +53,9 @@ tags:
       show_source: false
       heading_level: 1
       
+
+---
+
 ::: splink.comparison_level_library.LevenshteinLevelBase
     handler: python
     selection:
@@ -56,6 +65,9 @@ tags:
       show_root_heading: true
       show_source: false   
       heading_level: 1
+
+---
+
 
 ::: splink.comparison_level_library.JaroWinklerLevelBase
     handler: python
@@ -67,6 +79,8 @@ tags:
       show_source: false
       heading_level: 1
  
+---
+
 ::: splink.comparison_level_library.JaccardLevelBase
     handler: python
     selection:
@@ -77,6 +91,8 @@ tags:
       show_source: false
       heading_level: 1
 
+---
+
 ::: splink.comparison_level_library.ColumnsReversedLevelBase
     handler: python
     selection:
@@ -86,7 +102,9 @@ tags:
       show_root_heading: true
       show_source: false
       heading_level: 1
-      
+
+---
+
 ::: splink.comparison_level_library.DistanceInKMLevelBase
     handler: python
     selection:
@@ -96,8 +114,9 @@ tags:
       show_root_heading: true
       show_source: false
       heading_level: 1    
-      
- ::: splink.comparison_level_library.PercentageDifferenceLevelBase
+---
+
+::: splink.comparison_level_library.PercentageDifferenceLevelBase
     handler: python
     selection:
       members:
