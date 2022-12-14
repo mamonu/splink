@@ -11,8 +11,9 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: true
+      show_root_heading: false
       show_source: true
+      heading_level: 1
       
 
 ::: splink.comparison_library.DistanceFunctionAtThresholdsComparisonBase
@@ -21,8 +22,9 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: true
+      show_root_heading: false
       show_source: true
+      heading_level: 1
 
 ::: splink.comparison_library.LevenshteinAtThresholdsComparisonBase
     handler: python
@@ -30,8 +32,9 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: true
+      show_root_heading: false
       show_source: true
+      heading_level: 1
       
       
 ::: splink.comparison_library.JaccardAtThresholdsComparisonBase
@@ -40,8 +43,9 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: true
-      show_source: true      
+      show_root_heading: false
+      show_source: true   
+      heading_level: 1
 
 ::: splink.comparison_library.JaroWinklerAtThresholdsComparisonBase
     handler: python
@@ -49,8 +53,9 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: true
+      show_root_heading: false
       show_source: true
+      heading_level: 1
 
 ::: splink.comparison_library.ArrayIntersectAtSizesComparisonBase
     handler: python
@@ -58,8 +63,9 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: true
+      show_root_heading: false
       show_source: true
+      heading_level: 1
 
       
       
