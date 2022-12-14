@@ -27,6 +27,6 @@ $$Levenstein(s_1, s_2) = \min \lbrace \begin{array}{l}
 \text{insertion} \
 \text{deletion} \
 \text{substitution}
-\end{array} \right}$$
+\end{array} \rbrace $$
 
 where $s_1$ and $s_2$ are the two strings being compared. This metric measures the minimum number of edit operations (insertions, deletions, and substitutions) required to transform one string into the other, and can be used to compare strings that may not be identical but are still similar.
