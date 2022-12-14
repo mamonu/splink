@@ -24,9 +24,9 @@ where $Jaro$ is the Jaro similarity score, $p$ is the scaling factor, $l$ is the
 The formula for Levenstein Distance, also known as Edit Distance, is:
 
 $$Levenstein(s_1, s_2) = \min \lbrace \begin{array}{l}
-\text{insertion} \ /
-\text{deletion} \  
-\text{substitution} /
+\text{insertion} \ ,
+\text{deletion} ,
+\text{substitution} ,
 \end{array} \rbrace $$
 
 where $s_1$ and $s_2$ are the two strings being compared. This metric measures the minimum number of edit operations (insertions, deletions, and substitutions) required to transform one string into the other, and can be used to compare strings that may not be identical but are still similar.
