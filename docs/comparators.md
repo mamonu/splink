@@ -41,7 +41,11 @@ The formula for Jaro Winkler is:
 
 $$Jaro Winkler = Jaro + p \cdot l \cdot (1 - Jaro)$$
 
-where $Jaro$ is the Jaro similarity score, $p$ is the scaling factor, $l$ is the length of the common prefix, and $1 - Jaro$ is the penalty for non-matching characters at the beginning of the strings.
+where 
+$Jaro$ is the Jaro similarity score, 
+$p$ is the scaling factorfor how much the score is adjusted upwards for having common prefixes. {\displaystyle p} p should not exceed 0.25 (i.e. 1/4, with 4 being the maximum length of the prefix being considered), otherwise the similarity could become larger than 1. The standard value for this constant in Winkler's work is {\displaystyle p=0.1}p=0.1
+
+$l$ is the length of the common prefix, and $1 - Jaro$ is the penalty for non-matching characters at the beginning of the strings.
 
 
 
