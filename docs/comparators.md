@@ -21,7 +21,6 @@ where $Jaro$ is the Jaro similarity score, $p$ is the scaling factor, $l$ is the
 
 
 
-
 The formula for Levenstein Distance, also known as Edit Distance, is:
 
 $$Levenstein(s_1, s_2) = \min \left{ \begin{array}{l}
