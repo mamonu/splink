@@ -16,6 +16,9 @@ The Jaro measure is defined as the minimum of three values: the number of matchi
 
 For example, the Jaro similarity between the strings "MARTHA" and "MARHTA" is 0.9444444444444444. This is calculated as follows: the number of matching characters is 6, the average length of the two strings is 6, the number of transpositions is 1, and the maximum length of the two strings is 7. Thus, the Jaro measure is calculated as 6 / 6 + 1 / 6 + 6 / 7 = 0.9444444444444444.
 
+
+$m \leq \left\lfloor \frac{\min(|s|,|t|)}{2} \right\rfloor + \delta$
+
 The Jaro similarity measure is often used in applications such as spell checking, entity resolution, and duplicate detection. It is particularly useful in cases where the two strings being compared are of similar length and contain similar characters. It is less effective, however, in cases where the two strings are very different in length or contain few common characters.
 
 
