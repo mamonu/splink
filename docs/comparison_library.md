@@ -12,7 +12,7 @@ tags:
         -  __init__
     rendering:
       show_root_heading: false
-      show_source: true
+      show_source: false
       heading_level: 1
       
 
@@ -23,7 +23,7 @@ tags:
         -  __init__
     rendering:
       show_root_heading: false
-      show_source: true
+      show_source: false
       heading_level: 1
 
 ::: splink.comparison_library.LevenshteinAtThresholdsComparisonBase
@@ -33,7 +33,7 @@ tags:
         -  __init__
     rendering:
       show_root_heading: false
-      show_source: true
+      show_source: false
       heading_level: 1
       
       
@@ -44,7 +44,7 @@ tags:
         -  __init__
     rendering:
       show_root_heading: false
-      show_source: true   
+      show_source: false   
       heading_level: 1
 
 ::: splink.comparison_library.JaroWinklerAtThresholdsComparisonBase
@@ -54,7 +54,7 @@ tags:
         -  __init__
     rendering:
       show_root_heading: false
-      show_source: true
+      show_source: false
       heading_level: 1
 
 ::: splink.comparison_library.ArrayIntersectAtSizesComparisonBase
@@ -64,7 +64,7 @@ tags:
         -  __init__
     rendering:
       show_root_heading: false
-      show_source: true
+      show_source: false
       heading_level: 1
 
       
