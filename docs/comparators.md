@@ -25,7 +25,7 @@ $s_1$ and $s_2$ are the two strings being compared,
 
 $m$ is the number of common characters.Characters are considered matching only if they are the same and not farther than 
 
-$$m \leq \left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1 $$ characters apart.
+$$ \left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1 $$ characters apart.
 
 $t$ is the number of transpositions. Transposition is the number of matching characters that are not in the right order divided by two.
 
