@@ -12,24 +12,13 @@ Another use of string comparators in data linkage is to merge different datasets
 ## Jaro similarity
 
 
-Jaro similarity is a string similarity measure that quantifies the similarity between two strings based on the number of common characters between them, 
-and their relative position.The Jaro similarity measure is often used in applications such as entity resolution, and duplicate detection. It is particularly useful in cases where the two strings being compared are of similar length and contain similar characters. It is less effective, however, in cases where the two strings are very different in length or contain few common characters.
+The Jaro similarity measure is a string similarity measure that quantifies the similarity between two strings based on the number of common characters between them and their relative position. It is often used in applications such as entity resolution and duplicate detection, and is particularly useful for comparing strings that are similar in length and contain similar characters.
 
-
-The formula for Jaro is:
+The formula for Jaro similarity is as follows:
 
 $$Jaro = \frac{1}{3} \left[ \frac{m}{|s_1|} + \frac{m}{|s_2|} + \frac{m-t}{m} \right]$$
 
-where: 
-$s_1$ and $s_2$ are the two strings being compared, 
-
-$m$ is the number of common characters.Characters are considered matching only if they are the same and not farther than 
-
-$$ \left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1 $$ characters apart.
-
-$t$ is the number of transpositions. Transposition is the number of matching characters that are not in the right order divided by two.
-
-
+where $s_1$ and $s_2$ are the two strings being compared, $m$ is the number of common characters (which are considered matching only if they are the same and not farther than $\left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1$ characters apart), and $t$ is the number of transpositions (which is calculated as the number of matching characters that are not in the right order divided by two).
 
 
 
