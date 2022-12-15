@@ -71,10 +71,54 @@ where $s_1$ and $s_2$ are the two strings being compared. This metric measures t
 ## Phonetic transformation algorithms
 
 Phonetic transformations are algorithms used to encode words into a standardized form based on their phonetic sound. This can be useful in tasks such as spelling correction or name matching. Two common phonetic transformations are Soundex and Double Metaphone.
+Soundex and Double Metaphone are algorithms for phonetic matching of words. This means that they can be used to match words that sound similar, even if they are spelled differently.
 
-Soundex is a phonetic algorithm developed by the U.S. Census Bureau in the early 1900s. It encodes words by converting them into a four-digit code, where each digit represents a specific phonetic sound. For example, the Soundex code for "MARTHA" would be M630, and the code for "MARHTA" would be M630 as well. This is because both words have the same phonetic sound, despite the different spelling.
+Soundex is a widely-used algorithm for phonetic matching. It was developed by Margaret K. Odell and Robert C. Russell in the early 1900s. The basic idea behind Soundex is to encode words based on their sounds, rather than their spelling. This allows words that sound similar to be encoded in the same way, even if they are spelled differently.
 
-Double Metaphone is a more recent phonetic algorithm developed by Lawrence Philips in 1998. It encodes words into a primary and secondary code, allowing for more variations in phonetic sounds. For example, the primary code for "MARTHA" would be MR0 and the secondary code would be MRT, while the primary code for "MARHTA" would be MRT and the secondary code would be MR0. This is because both words have similar sounds, but Double Metaphone recognizes the slight difference in the vowel sounds.
+To encode a word with Soundex, the algorithm follows these steps:
+
+Retain the first letter of the word.
+Replace all other letters with the number 0.
+Replace each of the following letters with the corresponding number:
+B, F, P, V: 1
+C, G, J, K, Q, S, X, Z: 2
+D, T: 3
+L: 4
+M, N: 5
+R: 6
+For example, the name "John" would be encoded as "J500". The name "Gwion" would be encoded as "G500".
+
+Double Metaphone is a more advanced algorithm for phonetic matching, developed by Lawrence Philips in the 1990s. It is based on the Soundex algorithm, but is designed to be more accurate and to handle a wider range of words.
+
+To encode a word with Double Metaphone, the algorithm follows these steps:
+
+Retain the first letter of the word.
+Remove any vowels, except for the first letter.
+Replace certain letters with other letters or combinations of letters, as follows:
+B: B
+C: X if followed by "ia" or "h" (e.g. "Cia" becomes "X", "Ch" becomes "X"), otherwise "S"
+D: J if followed by "ge", "gy", "gi", otherwise "T"
+G: J if followed by "g", "d", "i", "y", "e", otherwise "K"
+K: K
+L: L
+M: M
+N: N
+P: F
+Q: K
+R: R
+S: X if followed by "h" (e.g. "Sh" becomes "X"), otherwise "S"
+T: X if followed by "ia" or "ch" (e.g. "Tia" becomes "X", "Tch" becomes "X"), otherwise "T"
+V: F
+X: KS
+Z: S
+For example, the name "John" would be encoded as "JN". The name "Gwion" would be encoded as "JN".
+
+In both cases, the names "John" and "Gwion" are encoded in the same way, because they sound similar even though they are spelled differently. This shows how Soundex and Double Metaphone can be used to match words that sound similar.
+
+
+
+
+
 
 In conclusion, Soundex and Double Metaphone are useful phonetic transformations for tasks such as spelling correction and name matching. By encoding words into standardized codes based on their phonetic sound, these algorithms can help improve accuracy and efficiency in these tasks.
 
