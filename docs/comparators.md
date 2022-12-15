@@ -18,7 +18,11 @@ The formula for Jaro similarity is as follows:
 
 $$Jaro = \frac{1}{3} \left[ \frac{m}{|s_1|} + \frac{m}{|s_2|} + \frac{m-t}{m} \right]$$
 
-where $s_1$ and $s_2$ are the two strings being compared, $m$ is the number of common characters (which are considered matching only if they are the same and not farther than $\left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1$ characters apart), and $t$ is the number of transpositions (which is calculated as the number of matching characters that are not in the right order divided by two).
+where $s_1$ and $s_2$ are the two strings being compared, 
+
+$m$ is the number of common characters (which are considered matching only if they are the same and not farther than $\left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1$ characters apart), 
+
+and $t$ is the number of transpositions (which is calculated as the number of matching characters that are not in the right order divided by two).
 
 
 
