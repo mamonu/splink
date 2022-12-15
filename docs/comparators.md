@@ -106,7 +106,9 @@ M, N: 5
 R: 6
 ```
 
-For example, the name "John" would be encoded as "J500". The name "Gwion" would be encoded as "G500".
+As for an example of similar names having the same Soundex code, consider the names "Smith" and "Smythe". 
+These names are spelled differently, but they have the same pronunciation, so they would be encoded as "S530" using Soundex.
+
 
 ## Double Metaphone
 
