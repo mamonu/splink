@@ -3,6 +3,9 @@
 [![Downloads](https://pepy.tech/badge/splink/month)](https://pepy.tech/project/splink)
 [![Documentation](https://img.shields.io/badge/API-documentation-blue)](https://moj-analytical-services.github.io/splink/)
 
+❄️
+
+
 # Fast, accurate and scalable probabilistic data linkage using your choice of SQL backend.
 
 `splink` is a Python package for probabilistic record linkage (entity resolution).
