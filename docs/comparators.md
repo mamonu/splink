@@ -51,7 +51,7 @@ $l$ is the length of the common prefix,
 and $1 - Jaro$ is the penalty for non-matching characters at the beginning of the strings.
 
 
-
+## Levenstein edit distance 
 
 The Levenstein edit distance is a measure of the similarity between two strings of text. It is calculated by counting the number of operations (insertions, deletions, or substitutions) needed to transform one string into the other.
 
@@ -68,15 +68,17 @@ where $s_1$ and $s_2$ are the two strings being compared. This metric measures t
 
 
 
-## Phonetic transformation algorithms
+# Phonetic transformation algorithms
 
-Phonetic transformations are algorithms used to encode words into a standardized form based on their phonetic sound. This can be useful in tasks such as spelling correction or name matching. Two common phonetic transformations are Soundex and Double Metaphone.
 Soundex and Double Metaphone are algorithms for phonetic matching of words. This means that they can be used to match words that sound similar, even if they are spelled differently.
+
+## Soundex
 
 Soundex is a widely-used algorithm for phonetic matching. It was developed by Margaret K. Odell and Robert C. Russell in the early 1900s. The basic idea behind Soundex is to encode words based on their sounds, rather than their spelling. This allows words that sound similar to be encoded in the same way, even if they are spelled differently.
 
 To encode a word with Soundex, the algorithm follows these steps:
 
+```
 Retain the first letter of the word.
 Replace all other letters with the number 0.
 Replace each of the following letters with the corresponding number:
@@ -86,12 +88,17 @@ D, T: 3
 L: 4
 M, N: 5
 R: 6
+```
+
 For example, the name "John" would be encoded as "J500". The name "Gwion" would be encoded as "G500".
+
+## Double Metaphone
 
 Double Metaphone is a more advanced algorithm for phonetic matching, developed by Lawrence Philips in the 1990s. It is based on the Soundex algorithm, but is designed to be more accurate and to handle a wider range of words.
 
 To encode a word with Double Metaphone, the algorithm follows these steps:
 
+```
 Retain the first letter of the word.
 Remove any vowels, except for the first letter.
 Replace certain letters with other letters or combinations of letters, as follows:
@@ -111,13 +118,11 @@ T: X if followed by "ia" or "ch" (e.g. "Tia" becomes "X", "Tch" becomes "X"), ot
 V: F
 X: KS
 Z: S
+```
+
 For example, the name "John" would be encoded as "JN". The name "Gwion" would be encoded as "JN".
 
 In both cases, the names "John" and "Gwion" are encoded in the same way, because they sound similar even though they are spelled differently. This shows how Soundex and Double Metaphone can be used to match words that sound similar.
-
-
-
-
 
 
 In conclusion, Soundex and Double Metaphone are useful phonetic transformations for tasks such as spelling correction and name matching. By encoding words into standardized codes based on their phonetic sound, these algorithms can help improve accuracy and efficiency in these tasks.
