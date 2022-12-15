@@ -96,7 +96,6 @@ To encode a word with Soundex, the algorithm follows these steps:
 
 ```
 Retain the first letter of the word.
-Replace all other letters with the number 0.
 Replace each of the following letters with the corresponding number:
 B, F, P, V: 1
 C, G, J, K, Q, S, X, Z: 2
@@ -104,6 +103,8 @@ D, T: 3
 L: 4
 M, N: 5
 R: 6
+
+Replace all other letters with the number 0.
 ```
 
 As for an example of similar names having the same Soundex code, consider the names "Smith" and "Smythe". 
