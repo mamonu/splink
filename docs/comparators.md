@@ -12,14 +12,8 @@ Another use of string comparators in data linkage is to merge different datasets
 ## Jaro similarity
 
 
-The Jaro measure is defined as the minimum of three values: the number of matching characters divided by the average length of the two strings, the number of transpositions divided by the average length of the two strings, and the number of matching characters divided by the maximum length of the two strings.
-
-For example, the Jaro similarity between the strings "MARTHA" and "MARHTA" is 0.9444444444444444. This is calculated as follows: the number of matching characters is 6, the average length of the two strings is 6, the number of transpositions is 1, and the maximum length of the two strings is 7. Thus, the Jaro measure is calculated as 6 / 6 + 1 / 6 + 6 / 7 = 0.9444444444444444.
-
-
-$m \leq \left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor + \delta$
-
-The Jaro similarity measure is often used in applications such as spell checking, entity resolution, and duplicate detection. It is particularly useful in cases where the two strings being compared are of similar length and contain similar characters. It is less effective, however, in cases where the two strings are very different in length or contain few common characters.
+Jaro similarity is a string similarity measure that quantifies the similarity between two strings based on the number of common characters between them, 
+and their relative position.The Jaro similarity measure is often used in applications such as entity resolution, and duplicate detection. It is particularly useful in cases where the two strings being compared are of similar length and contain similar characters. It is less effective, however, in cases where the two strings are very different in length or contain few common characters.
 
 
 The formula for Jaro is:
@@ -28,8 +22,12 @@ $$Jaro = \frac{1}{3} \left[ \frac{m}{|s_1|} + \frac{m}{|s_2|} + \frac{m-t}{m} \r
 
 where: 
 $s_1$ and $s_2$ are the two strings being compared, 
-$m$ is the number of common characters, 
-and $t$ is the number of transpositions.
+
+$m$ is the number of common characters.Characters are considered matching only if they are the same and not farther than $m \leq \left\lfloor \frac{\min(|s_1|,|s_2|)}{2} \right\rfloor - 1  characters apart.
+
+$t$ is the number of transpositions. Transposition is the number of matching characters that are not in the right order divided by two.
+
+
 
 
 
@@ -69,30 +67,27 @@ where $s_1$ and $s_2$ are the two strings being compared. This metric measures t
 ## Jaccard similarity 
 
 
-The Jaccard similarity is a measure of similarity between two sets of data, and is often used in text analysis to compare the similarity of two documents. In this post, we will use the Jaccard similarity to compare the similarity of two addresses.
+The Jaccard similarity is a measure of similarity between two sets of data, and is often used in text analysis to compare the similarity of two string/documents.
 
-To start, we first need to break down each address into smaller substrings or "shingles". For example, let's say we have the following two addresses:
-
-Address 1: 123 Main Street, Anytown USA
-
-Address 2: 456 Elm Street, Anytown USA
-
-We can break each address down into the following shingles:
-
-Address 1: 123, Main, Street, Anytown, USA
-
-Address 2: 456, Elm, Street, Anytown, USA
-
-Next, we can use the Jaccard similarity formula to compare the similarity of these two addresses. The formula is as follows:
+The Jaccard similarity formula is:
 
 $$J(A,B)=\frac{|A \cap B|}{|A \cup B|}$$
 
-Where $A$ and $B$ are the sets of shingles for each address, and $|A \cap B|$ is the number of elements that are common to both sets, and $|A \cup B|$ is the total number of elements in both sets.
+To be really useful we first need to break down each address into "shingles". Shingles refer to the fixed-size subsets of a given set of data. 
+For example, let's say we have a set of data that consists of a long string of words such as addresses . To compute the Jaccard similarity of this set with other sets of data, we could break the original set of data into shingles of a fixed size (e.g. a word per shingle), and then represent the original set of data as the set of all its shingles. This allows us to easily calculate the Jaccard similarity of the original set with other sets of data by comparing the shingles that they share.
 
-In this example, the common elements between the two sets of shingles are "Street" and "Anytown". Therefore, the numerator of the Jaccard similarity formula is 2. The total number of elements in both sets is 6, so the denominator is 6. Therefore, the Jaccard similarity of these two addresses is $\frac{2}{6} = \frac{1}{3}$.
+For example, let's say we have the following two UK addresses:
 
-This means that these two addresses are only about 33% similar to each other, based on the shingles that we used in our analysis.
+Address 1: 10 Downing St, London, UK
+Address 2: 10 Downing St, Westminster, London, UK
 
+In this case, we can represent each address as a set of the individual words that it contains. So, for the first address, we would have the set {10, Downing, St, London, UK}, and for the second address, we would have the set {10, Downing, St, Westminster, London, UK}.
+
+Next, we need to compute the intersection and union of these two sets. The intersection is the set of words that appear in both addresses, and the union is the set of words that appear in either address. In this case, the intersection would be {10, Downing, St, London}, and the union would be {10, Downing, St, London, UK, Westminster}.
+
+Finally, to compute the Jaccard similarity of these two addresses, we divide the size of the intersection by the size of the union. In this case, the size of the intersection is 4, and the size of the union is 6, so the Jaccard similarity of these two addresses is 4/6, or 0.67.
+
+Thus, in this example, we can say that the two addresses have a moderate degree of similarity, with Address 1 and Address 2 having a Jaccard similarity of 0.67.
 
 # Phonetic transformation algorithms
 
@@ -148,9 +143,7 @@ Z: S
 
 For example, the name "John" would be encoded as "JN". The name "Gwion" would be encoded as "JN".
 
-In both cases, the names "John" and "Gwion" are encoded in the same way, because they sound similar even though they are spelled differently. This shows how Soundex and Double Metaphone can be used to match words that sound similar.
+In both cases, the names "John" and "Gwion" are encoded in the same way, because they sound similar even though they are spelled differently. 
 
-
-In conclusion, Soundex and Double Metaphone are useful phonetic transformations for tasks such as spelling correction and name matching. By encoding words into standardized codes based on their phonetic sound, these algorithms can help improve accuracy and efficiency in these tasks.
 
 
