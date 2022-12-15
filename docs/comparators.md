@@ -66,6 +66,32 @@ $$Levenstein(s_1, s_2) = \min \lbrace \begin{array}{l}
 
 where $s_1$ and $s_2$ are the two strings being compared. This metric measures the minimum number of edit operations (insertions, deletions, and substitutions) required to transform one string into the other, and can be used to compare strings that may not be identical but are still similar.
 
+## Jaccard similarity 
+
+
+The Jaccard similarity is a measure of similarity between two sets of data, and is often used in text analysis to compare the similarity of two documents. In this post, we will use the Jaccard similarity to compare the similarity of two addresses.
+
+To start, we first need to break down each address into smaller substrings or "shingles". For example, let's say we have the following two addresses:
+
+Address 1: 123 Main Street, Anytown USA
+
+Address 2: 456 Elm Street, Anytown USA
+
+We can break each address down into the following shingles:
+
+Address 1: 123, Main, Street, Anytown, USA
+
+Address 2: 456, Elm, Street, Anytown, USA
+
+Next, we can use the Jaccard similarity formula to compare the similarity of these two addresses. The formula is as follows:
+
+$$J(A,B)=\frac{|A \cap B|}{|A \cup B|}$$
+
+Where $A$ and $B$ are the sets of shingles for each address, and $|A \cap B|$ is the number of elements that are common to both sets, and $|A \cup B|$ is the total number of elements in both sets.
+
+In this example, the common elements between the two sets of shingles are "Street" and "Anytown". Therefore, the numerator of the Jaccard similarity formula is 2. The total number of elements in both sets is 6, so the denominator is 6. Therefore, the Jaccard similarity of these two addresses is $\frac{2}{6} = \frac{1}{3}$.
+
+This means that these two addresses are only about 33% similar to each other, based on the shingles that we used in our analysis.
 
 
 # Phonetic transformation algorithms
