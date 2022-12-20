@@ -80,9 +80,8 @@ In this case, we can represent each address as a set of the individual words tha
 
 Next, we need to compute the intersection and union of these two sets. The intersection is the set of words that appear in both addresses, and the union is the set of words that appear in either address. In this case, the intersection would be {10, Downing, St, London}, and the union would be {10, Downing, St, London, UK, Westminster}.
 
-Finally, to compute the Jaccard similarity of these two addresses, we divide the size of the intersection by the size of the union. In this case, the size of the intersection is 4, and the size of the union is 6, so the Jaccard similarity of these two addresses is 4/6, or 0.67.
+*** TBC ***
 
-Thus, in this example, we can say that the two addresses have a moderate degree of similarity, with Address 1 and Address 2 having a Jaccard similarity of 0.67.
 
 # Phonetic transformation algorithms
 
