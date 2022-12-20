@@ -78,7 +78,7 @@ Address 2: 10 Downing St, Westminster, London, UK
 
 In this case, we can represent each address as a set of the individual words that it contains. So, for the first address, we would have the set {10, Downing, St, London, UK}, and for the second address, we would have the set {10, Downing, St, Westminster, London, UK}.
 
-Next, we need to compute the intersection and union of these two sets. The intersection is the set of words that appear in both addresses, and the union is the set of words that appear in either address. In this case, the intersection would be {10, Downing, St, London}, and the union would be {10, Downing, St, London, UK, Westminster}.
+Next, we need to compute the intersection and union of these two sets. The intersection is the set of words that appear in both addresses, and the union is the set of words that appear in either address. In this case, the intersection would be {10, Downing, St, London, UK}, and the union would be {10, Downing, St, London, UK, Westminster}.
 
 *** TBC ***
 
