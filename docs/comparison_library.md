@@ -2,6 +2,9 @@
 tags:
   - API
   - comparisons
+  - Levenstein
+  - Jaro-Winkler
+  - Jaccard
 ---
 # Documentation for `comparison_library` 
 
