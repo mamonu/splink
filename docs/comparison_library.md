@@ -11,7 +11,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
       
@@ -22,7 +22,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
 
@@ -32,7 +32,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
       
@@ -43,7 +43,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false   
       heading_level: 1
 
@@ -53,7 +53,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
 
@@ -63,7 +63,7 @@ tags:
       members:
         -  __init__
     rendering:
-      show_root_heading: false
+      show_root_heading: true
       show_source: false
       heading_level: 1
 
